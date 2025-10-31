@@ -52,7 +52,6 @@ h1, h2, h3 {
   color: #fff;
 }
 
-
 .layout {
   display: flex;
   gap: 16px;
@@ -119,14 +118,15 @@ button {
 }
 
 /* Картинка в центральном блоке между H1 и приветствием */
-.panel-center .Hengki-Koenjoro-img {
+.hengki-koenjoro-img {
   display: block;
   margin: 12px auto 12px;
   max-width: 100%;
   width: clamp(220px, 50%, 520px);
   border-radius: 12px;
 }
-.panel-center .hero-img:hover {
+
+.hengki-koenjoro-img:hover {
   opacity: 0.85;
 }
 
