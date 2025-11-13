@@ -1,11 +1,19 @@
+:root {
+  --title-font-family: "Montserrat", sans-serif;
+  --text-font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
 
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: var(--text-font-family);
   line-height: 1.4;
   background: #f4f4f4;
   color: #222;
+}
+
+h1, h2, h3 {
+  font-family: var(--title-font-family);
 }
 
 .container {
@@ -13,7 +21,6 @@ body {
   margin: 0 auto;
   padding: 16px;
 }
-
 
 /* Выравниваем по ширине блоки */
 .bar {
@@ -44,7 +51,6 @@ body {
   background: #2b7a78;
   color: #fff;
 }
-
 
 .layout {
   display: flex;
@@ -109,6 +115,19 @@ button {
 .panel-center #toggleBtn {
   display: block;
   margin: 12px auto 0;
+}
+
+/* Картинка в центральном блоке между H1 и приветствием */
+.hengki-koenjoro-img {
+  display: block;
+  margin: 12px auto 12px;
+  max-width: 100%;
+  width: clamp(220px, 50%, 520px);
+  border-radius: 12px;
+}
+
+.hengki-koenjoro-img:hover {
+  opacity: 0.85;
 }
 
 @media (max-width: 900px) {
